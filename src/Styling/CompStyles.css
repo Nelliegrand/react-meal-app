@@ -1,0 +1,14 @@
+.searchForm {
+    height: 300px;
+width: 400px;
+background-color: #3359FF;
+align-self: center;
+}
+
+li {
+    list-style: none;
+}
+
+.clickMealName {
+    cursor: pointer;
+}
