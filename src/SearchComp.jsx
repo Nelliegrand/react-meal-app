@@ -39,23 +39,26 @@ function SearchComp() {
   return (
     <div>
         {/*Sökformulär*/}
+        <div className="container">
       <form className='searchForm' onSubmit={handleBtn}>
-        <input ref={inputSearch} type="text" onChange={handleInput} />
-        <button type="submit">Söt</button>
+      <h1>MEAL FINDER</h1>
+        <input className="inputBox" ref={inputSearch} type="text" onChange={handleInput} />
+        <button className="searchBtn" type="submit">SÖK</button>
       </form>
 
-      <div>
+      <div className="results">
         <ul>
           {mealResult.map((meal) => ( //loopa genom listan av maträtter
             <li key={meal.idMeal}> 
-              <img src={meal.strMealThumb} alt={meal.strMeal}/>
+              <img style={{borderRadius: '20px', border: 'solid 4px white'}} src={meal.strMealThumb} alt={meal.strMeal}/> {/*körde lite inline-styling här*/}
               <h2 className='clickMealName' onClick={() => handleMealClick(meal.idMeal)}>{meal.strMeal}</h2> 
-              {/*infoga DetailComp för att hämta detaljer på den maträtt som klickas på*/}
+              {/*infogar DetailComp för att hämta detaljer på den maträtt som klickas på*/}
               {meal.idMeal === clickedMealId && <DetailComp mealId={clickedMealId} />}
             </li>
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 }

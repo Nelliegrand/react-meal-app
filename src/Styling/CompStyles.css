@@ -1,8 +1,61 @@
+/*Styling med separat css-fil*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(253, 240, 167);
+    padding: 20px;
+    min-height: 100vh;
+    
+}
+
+
 .searchForm {
-    height: 300px;
-width: 400px;
-background-color: #3359FF;
-align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1000px;
+    background-color: #dab44b;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow: -2px -2px 0 #000,  
+    2px -2px 0 #000,
+   -2px 2px 0 #000,
+    2px 2px 0 #000;
+
+}
+
+.inputBox {
+height: 40px;
+width: 300px;
+margin-top: 10px; 
+margin-bottom: 20px;
+border: none;
+outline: none;
+background-color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 35px;
+}
+
+.searchBtn {
+height: 50px;
+width: 150px;
+margin-bottom: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: large;
+border: none;
+background-color: white;
+}
+
+.results {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    
 }
 
 li {
@@ -11,4 +64,10 @@ li {
 
 .clickMealName {
     cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
 }
